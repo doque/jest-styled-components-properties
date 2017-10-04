@@ -1,25 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Parent = styled.div`
-  border-color: red;
-  background: yellow;
+  width: ${ props => props.theme.dimensions.large };
+  color: ${ props => props.theme.colors.one };
+  background-color: ${props => props.theme.colors.two };
 `;
 
 const Child = styled(Parent)`
-  background: green;
+  color: ${props => props.theme.colors.three };
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Parent>
-        <Child />
-      </Parent>
-    );
-  }
-}
-
 export { Parent, Child };
-
-export default App;
