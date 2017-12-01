@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.1.7",
-    "jest-styled-components": "4.6.0",
+    "jest-styled-components": "4.9.0",
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "react-test-renderer": "16.0.0",
